@@ -5,6 +5,7 @@
     padding-right: 8%;
     flex-direction: column;
     margin-top: 300px;
+    color: var(--brand-text-inverse);
 
     .header{
         width: 100%;
@@ -13,7 +14,7 @@
 
         p{
             margin: 0 0 14px;
-            color: #666;
+            color: var(--brand-accent);
             font-weight: 300;
             text-transform: uppercase;
             font-size: 13px;
@@ -42,7 +43,7 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        background-color: white;
+        background-color: var(--brand-surface-raised);
         pointer-events: none;
         overflow: hidden;
         z-index: 3;
@@ -73,8 +74,8 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        background-color: #455CE9;
-        color: white;
+        background-color: var(--brand-accent);
+        color: var(--brand-text-inverse);
         position: fixed;
         z-index:3;
         display: flex;

@@ -30,7 +30,7 @@ export default function Contact() {
                     </span>
                     <h2>content that converts</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
-                        <Rounded  backgroundColor={"#334BD3"} className={styles.button}>
+                        <Rounded  backgroundColor={"var(--brand-accent)"} className={styles.button}>
                             <a href="tel:+918383022835">Call now</a>
                         </Rounded>
                     </motion.div>

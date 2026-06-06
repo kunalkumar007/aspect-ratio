@@ -5,22 +5,22 @@ import Image from 'next/image';
 
 const slider1 = [
     {
-        color: "#e8e3dc",
+        color: "#f7efe4",
         src: "aspectratio-hero.jpg",
         label: "Video campaigns"
     },
     {
-        color: "#d6d7dc",
+        color: "#f1e7d9",
         src: "aspectratio-about.jpeg",
         label: "Brand storytelling"
     },
     {
-        color: "#e3e3e3",
+        color: "#f09010",
         src: "aspectratio-stats.jpeg",
         label: "1000+ deliveries"
     },
     {
-        color: "#21242b",
+        color: "#1c1d20",
         src: "/logo.png",
         label: "Aspect Ratio"
     }
@@ -28,22 +28,22 @@ const slider1 = [
 
 const slider2 = [
     {
-        color: "#d4e3ec",
+        color: "#f5e2c8",
         src: "aspectratio-stats.jpeg",
         label: "50+ clients"
     },
     {
-        color: "#e5e0e1",
+        color: "#ffad33",
         src: "aspectratio-hero.jpg",
         label: "Social ads"
     },
     {
-        color: "#d7d4cf",
+        color: "#ebe5dc",
         src: "/logo.png",
         label: "Digital strategy"
     },
     {
-        color: "#e1dad6",
+        color: "#fff4e3",
         src: "aspectratio-about.jpeg",
         label: "Web and SEO"
     }

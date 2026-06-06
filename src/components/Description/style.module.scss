@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 90px;
+    color: var(--brand-text-inverse);
     .body{
         max-width: 1400px;
         width: 100%;
@@ -46,8 +47,8 @@
             margin-top: 44px;
             width: 164px;
             height: 164px;
-            background-color: #1C1D20;
-            color: white;
+            background-color: var(--brand-accent);
+            color: var(--brand-text-inverse);
             border-radius: 50%;
             position: relative;
             display: flex;
@@ -69,7 +70,7 @@
             gap: 18px;
 
             article{
-                border-top: 1px solid rgb(201, 201, 201);
+                border-top: 1px solid var(--brand-border-muted);
                 padding-top: 22px;
 
                 h3{
@@ -84,7 +85,7 @@
                     font-size: 16px;
                     line-height: 1.55;
                     font-weight: 300;
-                    color: #4d4d4d;
+                    color: var(--brand-muted-strong);
                 }
             }
         }
@@ -96,8 +97,8 @@
         align-self: center;
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        border-top: 1px solid rgb(201, 201, 201);
-        border-bottom: 1px solid rgb(201, 201, 201);
+        border-top: 1px solid var(--brand-border-muted);
+        border-bottom: 1px solid var(--brand-border-muted);
 
         div{
             min-height: 170px;
@@ -105,13 +106,14 @@
             flex-direction: column;
             justify-content: center;
             padding: 30px;
-            border-right: 1px solid rgb(201, 201, 201);
+            border-right: 1px solid var(--brand-border-muted);
 
             &:last-child{
                 border-right: none;
             }
 
             strong{
+                color: var(--brand-accent);
                 font-size: 52px;
                 line-height: 1;
                 font-weight: 500;
@@ -119,7 +121,7 @@
 
             span{
                 margin-top: 14px;
-                color: #555;
+                color: var(--brand-muted-strong);
                 font-weight: 300;
             }
         }
@@ -128,7 +130,7 @@
     .moreWork{
         padding: 20px;
         border-radius: 40px;
-        border: 1px solid grey;
+        border: 1px solid var(--brand-border);
     }
 }
 
@@ -155,7 +157,7 @@
             }
 
             div:nth-child(-n + 2){
-                border-bottom: 1px solid rgb(201, 201, 201);
+                border-bottom: 1px solid var(--brand-border-muted);
             }
         }
     }
@@ -188,7 +190,7 @@
             div{
                 min-height: 132px;
                 border-right: none;
-                border-bottom: 1px solid rgb(201, 201, 201);
+                border-bottom: 1px solid var(--brand-border-muted);
 
                 &:last-child{
                     border-bottom: none;

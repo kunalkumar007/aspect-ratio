@@ -1,4 +1,22 @@
 
+:root{
+    --brand-background: #ffffff;
+    --brand-surface: #f8f5ef;
+    --brand-surface-raised: #141516;
+    --brand-text: #ffffff;
+    --brand-text-inverse: #1c1d20;
+    --brand-muted: #858587;
+    --brand-muted-strong: #555555;
+    --brand-accent: #f09010;
+    --brand-accent-strong: #ffad33;
+    --brand-accent-soft: rgba(240, 144, 16, 0.18);
+    --live-accent: #03e8ba;
+    --live-accent-strong: #03f0c1;
+    --live-accent-soft: rgba(3, 232, 186, 0.14);
+    --brand-border: rgba(134, 134, 134, 0.55);
+    --brand-border-muted: rgba(201, 201, 201, 0.9);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -11,8 +29,8 @@ body{
     margin: 0px;
     overflow-x: hidden;
     cursor: wait;
-    background: #ffffff;
-    color: #1C1D20;
+    background: var(--brand-background);
+    color: var(--brand-text-inverse);
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 

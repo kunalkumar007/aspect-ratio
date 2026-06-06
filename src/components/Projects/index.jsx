@@ -13,56 +13,56 @@ const projects = [
     category: "Strategy",
     description: "Strategic content plans built to engage audiences and drive outcomes.",
     src: "aspectratio-stats.jpeg",
-    color: "#111111"
+    color: "#1c1d20"
   },
   {
     title: "Video Production",
     category: "Production",
     description: "Compelling visuals that inform, inspire, and convert.",
     src: "aspectratio-hero.jpg",
-    color: "#394044"
+    color: "#3a332c"
   },
   {
     title: "Brand Storytelling",
     category: "Creative",
     description: "Narratives that make brands memorable and easier to trust.",
     src: "aspectratio-about.jpeg",
-    color: "#D7D2C7"
+    color: "#f7efe4"
   },
   {
     title: "Podcast Production",
     category: "Audio",
     description: "End-to-end podcast production for stronger brand presence.",
     src: "/logo.png",
-    color: "#ECE7DC"
+    color: "#fff4e3"
   },
   {
     title: "Web Development & Website Design",
     category: "Digital",
     description: "Websites with visual polish, usable structure, and performance in mind.",
     src: "aspectratio-hero.jpg",
-    color: "#111111"
+    color: "#141516"
   },
   {
     title: "Logo & Graphic Design",
     category: "Identity",
     description: "Brand visuals that clarify identity across campaigns and channels.",
     src: "/logo.png",
-    color: "#E5E0D7"
+    color: "#f5e2c8"
   },
   {
     title: "Social Media Advertising",
     category: "Growth",
     description: "Targeted campaigns built to increase visibility and engagement.",
     src: "aspectratio-stats.jpeg",
-    color: "#373A3D"
+    color: "#ffad33"
   },
   {
     title: "Search Engine Optimization",
     category: "SEO",
     description: "Optimization that improves visibility and search performance.",
     src: "aspectratio-about.jpeg",
-    color: "#CABFAF"
+    color: "#ebe5dc"
   },
   {
     title: "Social Media Management",
@@ -135,7 +135,7 @@ export default function Home() {
         })
       }
     </div>
-    <Rounded backgroundColor={"#1C1D20"}>
+    <Rounded backgroundColor={"var(--brand-accent)"}>
       <a href="mailto:sales@aspectratio.tech">Start a project</a>
     </Rounded>
     <>

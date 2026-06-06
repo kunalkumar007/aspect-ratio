@@ -64,7 +64,7 @@ export default function Home() {
         <p>Creating content that inspires and converts through video, web, SEO, advertising, and brand storytelling.</p>
         <div className={styles.heroActions}>
           <a href="#services">Explore Services</a>
-          <a href="tel:+918383022835">Call Now</a>
+          <a className={styles.liveSiteCall} href="tel:+918383022835">Call Now</a>
         </div>
       </section>
       <div className={styles.sliderContainer}>

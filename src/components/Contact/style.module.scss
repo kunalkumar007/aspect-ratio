@@ -1,19 +1,19 @@
 .contact{
-    color: white;
+    color: var(--brand-text);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #141516;
+    background-color: var(--brand-surface-raised);
     position: relative;
     .body{
         padding-top: 200px;
         width: 100%;
         max-width: 1800px;
-        background-color: #141516;
+        background-color: var(--brand-surface-raised);
 
         .title{
-            border-bottom: 1px solid rgb(134, 134, 134);
+            border-bottom: 1px solid var(--brand-border);
             padding-bottom: 100px;
             margin-left: 200px;
             margin-right: 200px;
@@ -50,8 +50,8 @@
             .button{
                 width: 180px;
                 height: 180px;
-                background-color: #455CE9;
-                color: white;
+                background-color: var(--brand-accent);
+                color: var(--brand-text-inverse);
                 border-radius: 50%;
                 position: absolute;
                 display: flex;
@@ -98,7 +98,7 @@
                         content: "";
                         width: 0%;
                         height: 1px;
-                        background-color: white;
+                        background-color: var(--brand-accent);
                         display: block;
                         margin-top: 2px;
                         position: relative;
@@ -118,7 +118,7 @@
                     gap: 15px;
                 }
                 h3{
-                    color: grey;
+                    color: var(--brand-muted);
                     cursor: default;
                     font-weight: 300;
                     font-size: 1em;
