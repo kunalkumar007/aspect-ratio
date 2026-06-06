@@ -12,63 +12,63 @@ const projects = [
     title: "Content Strategy & Planning",
     category: "Strategy",
     description: "Strategic content plans built to engage audiences and drive outcomes.",
-    src: "aspectratio-stats.jpeg",
+    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
     color: "#1c1d20"
   },
   {
     title: "Video Production",
     category: "Production",
     description: "Compelling visuals that inform, inspire, and convert.",
-    src: "aspectratio-hero.jpg",
+    src: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=80",
     color: "#3a332c"
   },
   {
     title: "Brand Storytelling",
     category: "Creative",
     description: "Narratives that make brands memorable and easier to trust.",
-    src: "aspectratio-about.jpeg",
+    src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
     color: "#f7efe4"
   },
   {
     title: "Podcast Production",
     category: "Audio",
     description: "End-to-end podcast production for stronger brand presence.",
-    src: "/logo.png",
+    src: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80",
     color: "#fff4e3"
   },
   {
     title: "Web Development & Website Design",
     category: "Digital",
     description: "Websites with visual polish, usable structure, and performance in mind.",
-    src: "aspectratio-hero.jpg",
+    src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
     color: "#141516"
   },
   {
     title: "Logo & Graphic Design",
     category: "Identity",
     description: "Brand visuals that clarify identity across campaigns and channels.",
-    src: "/logo.png",
+    src: "https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&w=900&q=80",
     color: "#f5e2c8"
   },
   {
     title: "Social Media Advertising",
     category: "Growth",
     description: "Targeted campaigns built to increase visibility and engagement.",
-    src: "aspectratio-stats.jpeg",
+    src: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&w=900&q=80",
     color: "#ffad33"
   },
   {
     title: "Search Engine Optimization",
     category: "SEO",
     description: "Optimization that improves visibility and search performance.",
-    src: "aspectratio-about.jpeg",
+    src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
     color: "#ebe5dc"
   },
   {
     title: "Social Media Management",
     category: "Social",
     description: "Content management that builds consistent audience connection.",
-    src: "aspectratio-hero.jpg",
+    src: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=900&q=80",
     color: "#242424"
   }
 ]
@@ -79,7 +79,7 @@ const scaleAnimation = {
     closed: {scale: 0, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
 }
 
-const getImageSrc = (src) => src.startsWith('/') ? src : `/images/${src}`;
+const getImageSrc = (src) => src.startsWith('http') || src.startsWith('/') ? src : `/images/${src}`;
 
 export default function Home() {
 
