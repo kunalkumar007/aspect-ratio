@@ -12,6 +12,7 @@ import Magnetic from '../../common/Magnetic';
 
 const navItems = [
     { title: 'Services', href: '#services' },
+    { title: 'Portfolio', href: '#portfolio' },
     { title: 'About', href: '#about' },
     { title: 'Proof', href: '#proof' },
     { title: 'Contact', href: '#contact' }

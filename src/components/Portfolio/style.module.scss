@@ -1,0 +1,203 @@
+.portfolio{
+    margin-top: 180px;
+    padding: 110px 8%;
+    background: var(--brand-surface-raised);
+    color: var(--brand-text);
+
+    .header{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto 36px;
+
+        p{
+            margin: 0 0 14px;
+            color: var(--brand-accent);
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        h2{
+            margin: 0;
+            font-size: 56px;
+            font-weight: 400;
+        }
+    }
+
+    .filters{
+        max-width: 1400px;
+        margin: 0 auto 46px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        button{
+            min-height: 44px;
+            padding: 0 18px;
+            border: 1px solid var(--brand-border);
+            border-radius: 999px;
+            background: transparent;
+            color: var(--brand-text);
+            cursor: pointer;
+            font: inherit;
+            transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+
+            &:hover{
+                border-color: var(--live-accent-strong);
+                color: var(--live-accent-strong);
+            }
+        }
+
+        .active{
+            background: var(--live-accent-strong);
+            border-color: transparent;
+            color: #000;
+        }
+    }
+
+    .grid{
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .video{
+        min-width: 0;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.04);
+        overflow: hidden;
+        transition: border-color 0.2s, transform 0.2s;
+
+        &:hover{
+            border-color: var(--brand-border);
+            transform: translateY(-3px);
+        }
+    }
+
+    .frame{
+        position: relative;
+        aspect-ratio: 9 / 16;
+        background: #000;
+
+        iframe{
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+
+    .long,
+    .podcast{
+        .frame{
+            aspect-ratio: 16 / 9;
+        }
+    }
+
+    .meta{
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+
+        span{
+            color: var(--brand-muted);
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        strong{
+            color: var(--live-accent-strong);
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    h3{
+        min-height: 74px;
+        margin: 0;
+        padding: 0 16px 18px;
+        color: var(--brand-text);
+        font-size: 18px;
+        line-height: 1.35;
+        font-weight: 400;
+    }
+
+    .actions{
+        max-width: 1400px;
+        margin: 48px auto 0;
+        display: flex;
+        justify-content: center;
+
+        button{
+            min-height: 54px;
+            padding: 0 28px;
+            border: 1px solid var(--brand-border);
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--live-accent-soft), var(--brand-accent-soft));
+            color: var(--brand-text);
+            cursor: pointer;
+            font: inherit;
+            transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+
+            &:hover{
+                border-color: var(--live-accent-strong);
+                background: linear-gradient(135deg, var(--live-accent-strong) 0%, var(--live-accent) 68%, var(--brand-accent-strong) 100%);
+                color: #000;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .portfolio{
+        margin-top: 130px;
+
+        .grid{
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .portfolio{
+        margin-top: 90px;
+        padding: 80px 24px;
+
+        .header{
+            h2{
+                font-size: 34px;
+            }
+        }
+
+        .filters{
+            gap: 10px;
+
+            button{
+                min-height: 40px;
+                padding: 0 14px;
+                font-size: 14px;
+            }
+        }
+
+        .grid{
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .actions{
+            margin-top: 36px;
+
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
