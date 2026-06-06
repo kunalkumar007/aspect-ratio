@@ -1,0 +1,94 @@
+.slidingImages{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    position: relative;
+    margin-top: 200px;
+    background-color: white;
+    z-index: 1;
+    .slider{
+        display: flex;
+        position: relative;
+        gap: 3vw;
+        width: 120vw;
+        left: -10vw;
+        .project{
+            width: 25%;
+            height: 20vw;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            .imageContainer{
+                position: relative;
+                width: 80%;
+                height: 80%;
+                img{
+                    object-fit: contain;
+                }
+            }
+            span{
+                position: absolute;
+                left: 22px;
+                bottom: 18px;
+                padding: 8px 12px;
+                border-radius: 999px;
+                background: rgba(255, 255, 255, 0.82);
+                color: #1C1D20;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
+    .circleContainer{
+        background-color: red;
+        position: relative;
+        margin-top: 100px;
+        .circle{
+            height: 1550%;
+            width: 120%;
+            left: -10%;
+            border-radius: 0 0 50% 50%;
+            background-color: white;
+            z-index: 1;
+            position: absolute;
+            box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .slidingImages{
+        margin-top: 120px;
+
+        .slider{
+            width: 170vw;
+
+            .project{
+                min-height: 220px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .slidingImages{
+        gap: 18px;
+
+        .slider{
+            width: 220vw;
+
+            .project{
+                min-height: 190px;
+
+                span{
+                    left: 14px;
+                    bottom: 14px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
