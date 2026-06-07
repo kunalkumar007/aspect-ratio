@@ -70,10 +70,16 @@
 @media (max-width: 640px){
     .project{
         flex-direction: column;
+        padding: 30px 0;
 
         p{
             max-width: none;
             margin: 0;
+        }
+
+        h2{
+            font-size: 30px;
+            line-height: 1.14;
         }
     }
 }

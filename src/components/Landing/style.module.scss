@@ -164,19 +164,28 @@
 
 @media (max-width: 700px){
   .landing{
-    min-height: 740px;
+    min-height: 700px;
 
     .heroCopy{
       left: 24px;
-      top: 150px;
+      top: 140px;
       width: calc(100% - 48px);
 
       h1{
-        font-size: 4.2rem;
+        font-size: 3.8rem;
       }
 
       p{
         font-size: 18px;
+      }
+
+      .heroActions{
+        gap: 12px;
+
+        a{
+          flex: 1 1 145px;
+          padding: 0 18px;
+        }
       }
     }
 
@@ -190,6 +199,23 @@
 
     .description{
       display: none;
+    }
+  }
+}
+
+@media (max-width: 380px){
+  .landing{
+    .heroCopy{
+      left: 18px;
+      width: calc(100% - 36px);
+
+      h1{
+        font-size: 3.25rem;
+      }
+
+      p{
+        font-size: 16px;
+      }
     }
   }
 }

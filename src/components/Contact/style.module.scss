@@ -92,6 +92,7 @@
                     margin: 0px;
                     padding: 2.5px;
                     cursor: pointer;
+                    overflow-wrap: anywhere;
                 }
                 p, a{
                     &::after{
@@ -182,7 +183,7 @@
                 }
 
                 h2{
-                    font-size: 3rem;
+                    font-size: 2.65rem;
                 }
 
                 .buttonContainer{
@@ -207,6 +208,7 @@
                 margin-top: 70px;
                 flex-direction: column;
                 align-items: flex-start;
+                max-width: calc(100% - 48px);
             }
 
             .info{
